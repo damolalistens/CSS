@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pusher</title>
+</head>
+<style>
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .links {
+        display: flex;
+        gap: 40px;
+    }
+
+    hr {
+        margin-top: 20px;
+    }
+
+    .account {
+        border: 1px solid black;
+        border-radius: 4px;
+        padding: 5px;
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        border: 1px solid white;
+        width: 60%;
+        margin-left: 15%;
+        margin-top: 5%;
+    }
+
+    label {
+        display: grid;
+        width: 70%
+    }
+
+    .ccdiv{
+        display: flex;
+    }
+
+    .first {
+        width: 90%;
+        background-color: white;
+        padding-left: 3%;
+    }
+
+    .second {
+        width: 30%;
+        padding: 8%;
+        background-color: steelblue;
+        color: white;
+    }
+
+    .name {
+        display: flex;
+        gap: 20%;
+        margin-bottom: 5%;
+        width: 50%;
+    }
+
+    button {
+        padding: 1% 10%;
+        margin: 3%;
+        margin-left: 10%;
+    }
+    input{
+        background-color: #F0F0F0;
+        border-radius: 3px;
+        border: 1px solid #F0F0F0;
+    }
+    .btn{
+        color: white;
+        background-color:#E0E0E0;
+        margin-left: 20%;
+    }
+    body{
+        background-color: aliceblue;
+    }
+</style>
+
+<body>
+    <header>
+        WP Pusher
+        <div class="links">
+            <span>Download</span>
+            <span>Learn more</span>
+            <span>Pricing</span>
+            <span>help</span>
+            <span class="account">Account</span>
+        </div>
+    </header>
+    <hr>
+    <main>
+        <div class="wrapper">
+            <div class="first">
+                <h1>Checkout</h1>
+                <p>&#x2780; Your Basic Information</p>
+                <div class="name">
+                    <label for="">First Name <input type="text" placeholder="Jane">
+                    </label>
+                    <label for="">Last Name<input type="text" placeholder="Doe">
+                    </label>
+                </div>
+                <label for="">
+                    E-mail
+                    <input type="email">
+                </label><br>
+                <p>&#x2781; Your Payment Information</p>
+                <label for="" class="cc">Credit card
+                    <div class="ccdiv">
+                        <input type="text" placeholder="card number" pattern="\d{16}" maxlength="16">
+                        <input type="text" placeholder="MM/YY" pattern="\d{2}/\d{2}" maxlength="5">
+                        <input type="text" placeholder="cvc" pattern="\d{3}" maxlength="3">
+                    </div>
+                </label><br>
+                <button>Buy WP Pusher</button><br>
+                <p> Need any help? Don't hesitate to <a href="">contact support!</a><p>
+                <input type="submit" value="powered by stripe" class="btn">
+            </div>
+            <div class="second">
+                $99/<sub>year</sub><br>
+                <p>Automatically renews after 1 year</p>
+                <p>&#x2714; Use on 5 client sites</p>
+                <p> &#x2714; Private respositories</p>
+                <p>&#x2714; Email support</p>
+                <p>Need 20 client sites?</p>
+                <a href="">Switch to the Agency plan</a><br>
+                <hr>
+                FTP is horrible to deal with. WP Pusher solves that issue and the customer support is awesome!<br>
+                Kick Beard
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
